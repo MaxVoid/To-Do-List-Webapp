@@ -13,14 +13,17 @@ body {
   box-shadow: 0 0 3px rgba(0,0,0, 0.4);
 }
 
-.completed {
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+li.completed {
   color: white;
   text-decoration: line-through;
   background: rgb(66, 244, 66);
 }
 
-/* need to make every other li that is colored darker and becomes completed to have this green bg color */
-.completed li:nth-child(2n) {
+li:nth-child(2n).completed {
   background: rgb(64, 224, 64);
 }
 
@@ -46,10 +49,6 @@ li {
   height: 40px;
   line-height: 40px;
   color: #666;
-}
-
-li:nth-child(2n) {
-  background: #f7f7f7;
 }
 
 input {
