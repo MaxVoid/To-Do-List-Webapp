@@ -1,4 +1,4 @@
-console.log("JS FILE CONNECTED");
+ console.log("JS FILE CONNECTED");
 
 // check/uncheck specific todos by clicking
 $("#list").on("click", "li", function(){
@@ -26,4 +26,8 @@ $("input[type='text']").keypress(function(event){
     // $("#list").append(`<li><i class="fas fa-trash-alt"></i> ${newTodo}</li>`);
     $("#list").append(`<li><span class="deleteBtn"><i class="fas fa-trash-alt"></i></span> ${newTodo}</li>`);
   };
+});
+
+$(".fa-plus").click(function(){
+  $("input[type='text']").fadeToggle(500);
 });
